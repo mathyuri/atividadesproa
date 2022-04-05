@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Basic Project </title>
+        <script>
+    
+    /* Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.*/
+        
+    var num1 = parseInt(prompt("Digite um número"));
+    var num2 = parseInt(prompt("Digite um número"));
+    var num3 = parseInt(prompt("Digite um número"));
+    var soma = 0;
+
+    if (num1 > num2 && num1 > num3) {
+        soma +=num1;
+        if (num2 > num3) {
+            soma += num2;
+        } else {
+            soma =+num3
+            
+        }
+    } else {
+        if (num2>num1 && num2>num3) {
+            soma+=num2;
+            if (num1>num3) {
+            soma += num1;
+                
+            } else {
+            soma += num3;
+                
+            }
+            
+        } else {
+            soma+=num3;
+            if (num1 > num2) {
+                soma += num1;
+                
+            } else {
+                soma+=num2;
+                
+            }
+        }
+        
+    }
+    alert (soma);
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>
